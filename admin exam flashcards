@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Salesforce Admin Certification Flashcards</title>
+<style>
+    body, html {
+        height: 100%;
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+    }
+    .flashcard-container {
+        width: 300px;
+        height: 200px;
+        perspective: 1000px;
+        margin-bottom: 20px;
+    }
+    .flashcard {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        cursor: pointer;
+    }
+    .card-content {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #ccc;
+        font-size: 16px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    .front {
+        background: #fff;
+    }
+    .back {
+        background: #f1f1f1;
+        transform: rotateY(180deg);
+    }
+</style>
+</head>
+<body>
+
+<div class="flashcard-container" onclick="this.firstChild.classList.toggle('is-flipped');">
+    <div class="flashcard">
+        <div class="card-content front">What is the purpose of Business Hours in Salesforce?</div>
+        <div class="card-content back">Business Hours determine the hours of operation for a company, used in case escalation and SLA calculations.</div>
+    </div>
+</div>
+
+<div class="flashcard-container" onclick="this.firstChild.classList.toggle('is-flipped');">
+    <div class="flashcard">
+        <div class="card-content front">How do you create a new custom object in Salesforce?</div>
+        <div class="card-content back">Custom objects can be created via the Object Manager by defining the object's schema and fields.</div>
+    </div>
+</div>
+
+<div class="flashcard-container" onclick="this.firstChild.classList.toggle('is-flipped');">
+    <div class="flashcard">
+        <div class="card-content front">What are Campaigns used for in Salesforce?</div>
+        <div class="card-content back">Campaigns are used to organize marketing efforts, tracking interactions and effectiveness related to marketing initiatives.</div>
+    </div>
+</div>
+
+<div class="flashcard-container" onclick="this.firstChild.classList.toggle('is-flipped');">
+    <div class="flashcard">
+        <div class="card-content front">Describe how Case Escalation Rules function in Salesforce.</div>
+        <div class="card-content back">Case Escalation Rules automatically escalate cases when certain conditions are met, such as time limits or other predefined criteria.</div>
+    </div>
+</div>
+
+<div class="flashcard-container" onclick="this.firstChild.classList.toggle('is-flipped');">
+    <div class="flashcard">
+        <div class="card-content front">What role does Chatter play in Salesforce collaboration?</div>
+        <div class="card-content back">Chatter facilitates collaboration by allowing users to share information, files, and updates in a social context within Salesforce.</div>
+    </div>
+</div>
+
+<div class="flashcard-container" onclick="this.firstChild.classList.toggle('is-flipped');">
+    <div class="flashcard">
+        <div class="card-content front">Explain the use of Data Loader for importing large data sets.</div>
+        <div class="card-content back">Data Loader is a tool provided by Salesforce for the bulk import or export of data. It can be used for inserting, updating, deleting, or exporting Salesforce records.</div>
+    </div>
+</div>
+
+<div class="flashcard-container" onclick="this.firstChild.classList.toggle('is-flipped');">
+    <div class="flashcard">
+        <div class="card-content front">What is the purpose of Approval Processes in Salesforce?</div>
+        <div class="card-content back">Approval Processes automate the approval steps for records in Salesforce, ensuring data integrity and compliance with business rules.</div>
+    </div>
+</div>
+
+</body>
+</html>
